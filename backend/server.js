@@ -8,6 +8,15 @@ const monthqtyRoutes = require('./routes/monthqty')
 const pledgerRoutes = require('./routes/pledger')
 const pricetrackRoutes = require('./routes/pricetrack')
 const iusersRoutes = require('./routes/iusers')
+const express = require('express')
+require('dotenv').config()
+
+const mongoose = require('mongoose')
+
+const employeeRoutes = require('./routes/employee')
+const employeeattendRoutes = require('./routes/employeeattend')
+const employeesalaryRoutes = require('./routes/employeesalary')
+
 
 //express app
 const app = express()
@@ -38,6 +47,3 @@ mongoose.connect(process.env.MONGO_URI)
     .catch((error) => {
         console.log(error)
     })
-
-
-
