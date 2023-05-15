@@ -1,65 +1,76 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useAuthContext } from './hooks/useAuthContext';
 
-//pages & components
+// pages & components
+import Home3 from './pages/Home3';
+import ItemList from './pages/ItemList';
+import Sidebar3 from './components/Sidebar3';
+import ItemAdd from './pages/ItemAdd';
+import LedgerAdd from './pages/LedgerAdd';
+import PledAdd from './pages/PledAdd';
+import PriceAdd from './pages/PriceAdd';
+import LedgerList from './pages/LedgerList';
+import UpdateComponent from './components/UpdateComponent';
+import InventoryLogin from './pages/InventoryLogin';
+import InventorySignup from './pages/InventorySignup';
 
-
-import EmployeeProfile from './pages/EmployeeProfile';
-import EmployeeRegister from './components/EmployeeRegister';
-import SalaryCalculator from './components/SalaryCalculator';
-import EmployeeS from './pages/EmployeeS';
-import EmployeeUpdate from './components/EmployeeUpdate';
-import EmployeeAttendance from './pages/EmployeeAttendance';
-import EmployeeAttView from './pages/EmployeeAttView';
-import EmployeeNavbar from './components/EmployeeNavbar';
-import EmployeeHome from './pages/EmployeeHome';
 
 function App() {
+  const{ iusers } = useAuthContext()
   return (
     <div className="App">
       <BrowserRouter>
-
-        <EmployeeNavbar/>
-        
+        <Sidebar3 />
         <div className="pages">
           <Routes>
             <Route
-              path="/"
-              element={<EmployeeHome/>}
-            />
-
-          <Route
-              path="/EmployeeProfile"
-              element={<EmployeeProfile/>}
+              path="/login"
+              element={<InventoryLogin />}
             />
 
             <Route
-              path="/EmployeeRegister"
-              element={<EmployeeRegister/>}
-            />
-
-              <Route
-              path="/SalaryCalculator"
-              element={<SalaryCalculator/>}
+              path="/signup"
+              element={<InventorySignup /> }
             />
 
             <Route
-              path="/EmployeeS"
-              element={<EmployeeS/>}
+              path="/Home3"
+              element={<Home3 />}
+            />
+
+            <Route
+              path="/ItemList"
+              element={<ItemList />}
+            />
+
+            <Route
+              path="/ItemAdd"
+              element={<ItemAdd />}
+            />
+
+            <Route
+              path="/LedgerAdd"
+              element={<LedgerAdd />}
+            />
+
+            <Route
+              path="/PledAdd"
+              element={<PledAdd />}
+            />
+
+            <Route
+              path="/PriceAdd"
+              element={<PriceAdd />}
+            />
+
+            <Route
+              path="/LedgerList"
+              element={<LedgerList />}
             />
 
             <Route
               path="/update/:id"
-              element={<EmployeeUpdate />}
-            />
-
-            <Route
-              path="/EmployeeAttendance"
-              element={<EmployeeAttendance/>}
-            />
-
-            <Route
-              path="/EmployeeAttView"
-              element={<EmployeeAttView/>}
+              element={<UpdateComponent />}
             />
 
           </Routes>
