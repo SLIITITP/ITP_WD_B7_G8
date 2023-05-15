@@ -1,0 +1,288 @@
+.container1{
+  width: 50%;
+  margin-top: 150px;
+  margin-left: 37%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 30px;
+  background-color: #133261;
+  color: white;
+}
+
+.title{
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 30px;
+  background-color: #133261;
+  color: white;
+}
+
+.container{
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.title{
+  background-color: #133261;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  padding: 17px 40px;
+  border-radius: 12px;
+  color: white;
+  border: 0;
+  background-color: #1AB1E0;
+  box-shadow: rgba(194, 22, 22, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 25px;
+  transition: all .5s ease;
+}
+ 
+.button:hover {
+  letter-spacing: 3px;
+  background-color: #133261;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #133261;
+}
+ 
+.button:active {
+  letter-spacing: 3px;
+  background-color: #133261;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #133261;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.search-partner-box{
+  width: 400px;
+  height: 35px;
+  text-align: center;
+  margin-left: 35%;
+  border: solid 1px black;
+}
+
+.table{
+  text-align: center;
+}
+
+
+
+
+
+/*navbar*/
+
+header .container {
+  background-color: #cacaca;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  transition: width 0.3s;
+  margin-top: 0;
+}
+
+header .container:hover{
+  width: 250px;
+}
+
+header .container .cname {
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger; 
+  text-align: center;
+  margin-left: 0px;
+  font-size:25px;
+  color: #2F4050;
+}
+
+header .container .sb .nav-optionoption1 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 30px;
+  size: 48px;
+}
+
+header .container .sb .nav-optionoption2 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 120px;
+  size: 48px;
+}
+
+header .container .sb .nav-optionoption3 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 210px;
+  size: 48px;
+}
+
+header .container .sb .nav-optionoption4 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 300px;
+  size: 48px;
+}
+
+header .container .sb .nav-optionoption5 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 390px;
+  size: 48px;
+}
+
+header .container .sb1{
+  position: absolute;
+  top: 138px;
+  padding-left: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.sbmenu1 .ul li{
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sbmenu1 .ul .li a{
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  transition: all .3s ease-in;
+}
+
+header .container .sb2{
+  position: absolute;
+  top: 220px;
+  padding-left: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.sbmenu2 .ul li{
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sbmenu2 .ul .li a{
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  transition: all .3s ease-in;
+}
+
+header .container .sb3{
+  position: absolute;
+  top: 307px;
+  padding-left: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.sbmenu3 .ul li{
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sbmenu3 .ul li:hover,
+.sbmenu3 .ul .li .active{
+  background-color: #fefefe;
+}
+
+.sbmenu3 .ul .li a{
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  transition: all .3s ease-in;
+}
+
+header .container .sb4{
+  position: absolute;
+  top: 397px;
+  padding-left: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.sbmenu4 .ul li{
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sbmenu4 .ul .li a{
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  transition: all .3s ease-in;
+}
+
+header .container .sb5{
+  position: absolute;
+  top: 485px;
+  padding-left: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.sbmenu5 .ul li{
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sbmenu5 .ul .li a{
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  transition: all .3s ease-in;
+}
+
+.box{
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+}
+
+
